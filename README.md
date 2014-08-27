@@ -28,6 +28,7 @@ The things we will be looking to see if you have learned in this project are:
   - Use URL parameters to pass data into a server application
   - Be able to map the flow of data through a web application
   - Use HandlebarsJS or another JS templating library to convert JSON to HTML *(stretch)*
+  - Jasmine testing
 
 ### User Stories
 
