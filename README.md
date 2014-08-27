@@ -12,7 +12,7 @@ This repository is part of the Personal Project series for Phase 2. This is 1 of
 
 # Client Side App
 
-The goal of this Personal Project is to build a client side web application. For Rubyists this means you will be basing your project off of the [Sinatra Web App started on this branch](.) and for Sharpies the [ASP.NET MVC app started on this branch](.).
+The goal of this Personal Project is to build a client side web application. For Rubyists this means you will be basing your project off of the [Sinatra Web App started on this branch](../../tree/rubyists) and for Sharpies the [ASP.NET MVC app started on this branch](../../tree/sharpies).
 
 ### Learning Competencies
 
