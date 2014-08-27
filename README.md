@@ -6,10 +6,9 @@ This repository is part of the Personal Project series for Phase 2. This is 1 of
 
 1. Clone this repository.
 2. Create a branch with your name.
-3. Copy or create your starter code (Sinatra Skeleton or ASP.NET MVC) in the repository's root directory.
-4. Commit and push up to origin.
-5. Create a pull request.
-6. Tag an instructor on your pull request for review or when you are done.
+3. Commit and push up to origin.
+4. Create a pull request.
+5. Tag an instructor on your pull request for review or when you are done.
 
 # Client Side App
 
