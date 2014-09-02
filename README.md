@@ -17,8 +17,8 @@ The goal of this Personal Project is to build a client side web application. For
 ### Learning Competencies
 
 The things we will be looking to see if you have learned in this project are:
-  - Write OO JavaScript
-  - Jasmine testing
+  - **Write OO JavaScript**
+  - **Jasmine testing**
   - Implement clean and flexible interfaces between objects
   - Separate my view concerns from my data verification concerns
   - Write custom event handlers in JavaScript or jQuery
