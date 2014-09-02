@@ -18,6 +18,7 @@ The goal of this Personal Project is to build a client side web application. For
 
 The things we will be looking to see if you have learned in this project are:
   - Write OO JavaScript
+  - Jasmine testing
   - Implement clean and flexible interfaces between objects
   - Separate my view concerns from my data verification concerns
   - Write custom event handlers in JavaScript or jQuery
@@ -27,15 +28,14 @@ The things we will be looking to see if you have learned in this project are:
   - Use URL parameters to pass data into a server application
   - Be able to map the flow of data through a web application
   - Use HandlebarsJS or another JS templating library to convert JSON to HTML *(stretch)*
-  - Jasmine testing
 
 ### User Stories
 
 We are going to create an online [customer relationship management](http://en.wikipedia.org/wiki/Customer_relationship_management) app.
 
 - A user can see a list of customers
-- A user can filter the list of customers by typing in a text search input
 - A user can deactivate a customer
-- A user can add a new customer with a name
 - A user can see all the notes for a customer by clicking "more" link for any listed customer
 - A user can add a new note
+- A user can filter the list of customers by typing in a text search input *(stretch)*
+- A user can add a new customer with a name *(stretch)*
