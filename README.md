@@ -34,7 +34,7 @@ The things we will be looking to see if you have learned in this project are:
 We are going to create an online [customer relationship management](http://en.wikipedia.org/wiki/Customer_relationship_management) app.
 
 - A user can see a list of customers
-- A user can deactivate (*not delete*) a customer
+- A user can delete a customer
 - A user can see all the notes for a customer by clicking "more" link for any listed customer
 - A user can add a new note
 - A user can filter the list of customers by typing in a text search input *(stretch)*
