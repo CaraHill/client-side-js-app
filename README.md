@@ -39,3 +39,7 @@ We are going to create an online [customer relationship management](http://en.wi
 - A user can add a new note
 - A user can filter the list of customers by typing in a text search input *(stretch)*
 - A user can add a new customer with a name *(stretch)*
+
+### Example UI
+
+![Example UI](ppcsa-example-ui.jpg)
