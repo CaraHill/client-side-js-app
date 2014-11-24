@@ -18,7 +18,7 @@ The goal of this Personal Project is to build a client side web application. For
 
 The things we will be looking to see if you have learned in this project are:
   - **Write custom event handlers in JavaScript or jQuery**
-  - **Use AJAX to retrieve partials from the server and replace or append them to a website**
+  - **Use AJAX to retrieve HTML from the server and replace or append them to a website**
   - **Use AJAX to retrieve JSON from the server and then modify the page based on the JSON**
   - **Use JSON to pass data via and AJAX call and modify the DOM**
   - Use URL parameters to pass data into a server application
