@@ -1,0 +1,14 @@
+C:\Users\Rohith\Documents\GitHub\PersonalProject\personal-project-client-side-app-challenge\ProductsApp\ProductsApp\bin\ProductsApp.dll.config
+C:\Users\Rohith\Documents\GitHub\PersonalProject\personal-project-client-side-app-challenge\ProductsApp\ProductsApp\bin\ProductsApp.dll
+C:\Users\Rohith\Documents\GitHub\PersonalProject\personal-project-client-side-app-challenge\ProductsApp\ProductsApp\bin\ProductsApp.pdb
+C:\Users\Rohith\Documents\GitHub\PersonalProject\personal-project-client-side-app-challenge\ProductsApp\ProductsApp\bin\Newtonsoft.Json.dll
+C:\Users\Rohith\Documents\GitHub\PersonalProject\personal-project-client-side-app-challenge\ProductsApp\ProductsApp\bin\System.Net.Http.Formatting.dll
+C:\Users\Rohith\Documents\GitHub\PersonalProject\personal-project-client-side-app-challenge\ProductsApp\ProductsApp\bin\System.Web.Http.dll
+C:\Users\Rohith\Documents\GitHub\PersonalProject\personal-project-client-side-app-challenge\ProductsApp\ProductsApp\bin\System.Web.Http.WebHost.dll
+C:\Users\Rohith\Documents\GitHub\PersonalProject\personal-project-client-side-app-challenge\ProductsApp\ProductsApp\bin\Newtonsoft.Json.xml
+C:\Users\Rohith\Documents\GitHub\PersonalProject\personal-project-client-side-app-challenge\ProductsApp\ProductsApp\bin\System.Net.Http.Formatting.xml
+C:\Users\Rohith\Documents\GitHub\PersonalProject\personal-project-client-side-app-challenge\ProductsApp\ProductsApp\bin\System.Web.Http.xml
+C:\Users\Rohith\Documents\GitHub\PersonalProject\personal-project-client-side-app-challenge\ProductsApp\ProductsApp\bin\System.Web.Http.WebHost.xml
+C:\Users\Rohith\Documents\GitHub\PersonalProject\personal-project-client-side-app-challenge\ProductsApp\ProductsApp\obj\Debug\ProductsApp.dll
+C:\Users\Rohith\Documents\GitHub\PersonalProject\personal-project-client-side-app-challenge\ProductsApp\ProductsApp\obj\Debug\ProductsApp.pdb
+C:\Users\Rohith\Documents\GitHub\PersonalProject\personal-project-client-side-app-challenge\ProductsApp\ProductsApp\obj\Debug\CustomerApp.csprojResolveAssemblyReference.cache
