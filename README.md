@@ -1,3 +1,8 @@
+# You should not be writing ANY server side code (C# or Ruby) for this challange. No models, views or controllers. All you should be writing is JAVASCRIPT!
+
+# [Sharpies your code starts on this branch](../../tree/sharpies)
+# [Rubyists your code starts on this branch](../../tree/rubyists)
+
 # Personal Projects
 
 This repository is part of the Personal Project series for Phase 2. This is 1 of the 3 Personal Projects for this phase. These projects are intentionally open ended but aim to cover all the Learning Competencies with your project. The instructors are available to answer any questions you have around these projects.
