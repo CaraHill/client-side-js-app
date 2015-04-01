@@ -1,4 +1,4 @@
-# You should not be writing ANY server side code (C# or Ruby) for this challange. No models, views or controllers. All you should be writing is JAVASCRIPT!
+# You should only be writing JAVASCRIPT for this project. You should not be changing server side code AT ALL. NOT EVEN TEMPLATES.
 
 # [Sharpies your code starts on this branch](../../tree/sharpies)
 # [Rubyists your code starts on this branch](../../tree/rubyists)
