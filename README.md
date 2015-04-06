@@ -1,7 +1,7 @@
 # You should only be writing JAVASCRIPT for this challenge. You should not be changing server side code AT ALL. NOT EVEN TEMPLATES.
 
-# [Sharpies your code starts on this branch](../../tree/sharpies)
-# [Rubyists your code starts on this branch](../../tree/rubyists)
+# [Sharpie starting code](./cs)
+# [Rubyist starting code](./rb)
 
 # Personal Projects
 
