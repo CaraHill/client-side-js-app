@@ -3,20 +3,21 @@ function CrmController () {}
 CrmController.prototype = {
   run: function() {
     this.view = new CrmView('#crm');
-    this.model = new CrmModel();
+    this.customersModel = new CustomersModel();
+    this.customerModel = new CustomerModel();
+    this.notesModel = new NotesModel();
 
-    this.model.getAllCustomers(this.view.allCustomers,this.view.allCustomersFailure);
+    this.customersModel.getAllCustomers(this.view.allCustomers,this.view.allCustomersFailure);
 
     this.registerEventHandlers();
   },
   registerEventHandlers: function() {
-    this.view.registerDeleteEventHandler(this.model.deleteCustomer);
+    this.view.registerDeleteEventHandler(this.customerModel.deleteCustomer);
 
-    this.view.registerNotesEventHandler(this.model.seeCustomerNotes);
+    this.view.registerNotesEventHandler(this.notesModel.seeCustomerNotes);
 
     this.view.registerAddNotesFormEventHandler();
 
-    this.view.registerNewNoteEventHandler(this.model.addNewCustomerNote);
+    this.view.registerNewNoteEventHandler(this.notesModel.addNewCustomerNote);
   }
-
 }

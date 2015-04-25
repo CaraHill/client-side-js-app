@@ -1,32 +1,6 @@
-function CrmModel () {
+function NotesModel () {}
 
-}
-
-CrmModel.prototype = {
-  getAllCustomers: function(success,failure) {
-    $.ajax({
-      url: "/customers",
-      type: 'GET',
-      success: function(data) {
-        success(data);
-      },
-      failure: function() {
-        failure();
-      }
-    });
-  },
-  deleteCustomer: function(success, failure, customer, customerId) {
-    $.ajax({
-      url: "/customers/"+customerId,
-      type: 'DELETE',
-      success: function() {
-        success(customer);
-      },
-      failure: function() {
-        failure();
-      }
-    });
-  },
+NotesModel.prototype = {
   seeCustomerNotes: function(success, failure, customerId, customerNotes) {
     $.ajax({
       url: "/customers/"+customerId+"/notes",
