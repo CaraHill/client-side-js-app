@@ -1,16 +1,7 @@
 $(document).ready(function() {
 
-  var view = new CrmView('#crm');
-  var model = new CrmModel();
+  var controller = new CrmController();
 
-  model.getAllCustomers(view.allCustomers,view.allCustomersFailure);
-
-  view.registerDeleteEventHandler(model.deleteCustomer);
-
-  view.registerNotesEventHandler(model.seeCustomerNotes);
-
-  view.registerAddNotesFormEventHandler();
-
-  view.registerNewNoteEventHandler(model.addNewCustomerNote);
+  controller.run();
 
 });
