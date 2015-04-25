@@ -7,6 +7,9 @@ CrmController.prototype = {
 
     this.model.getAllCustomers(this.view.allCustomers,this.view.allCustomersFailure);
 
+    this.registerEventHandlers();
+  },
+  registerEventHandlers: function() {
     this.view.registerDeleteEventHandler(this.model.deleteCustomer);
 
     this.view.registerNotesEventHandler(this.model.seeCustomerNotes);
@@ -15,4 +18,5 @@ CrmController.prototype = {
 
     this.view.registerNewNoteEventHandler(this.model.addNewCustomerNote);
   }
+
 }
