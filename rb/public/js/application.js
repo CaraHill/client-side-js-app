@@ -1,22 +1,19 @@
 $(document).ready(function() {
 
-  var view = new CrmView('#crm');
+  var getAllCustomers = function() {
+    $.ajax({
+      url: "/customers",
+      type: 'GET',
+      success: function(data) {
+        view.allCustomers(data);
+      },
+      failure: function() {
+        view.allCustomersFailure();
+      }
+    });
+  };
 
-  $.ajax({
-    url: "/customers",
-    type: 'GET',
-    success: function(data) {
-      view.allCustomers(data);
-    },
-    failure: function() {
-      view.allCustomersFailure();
-    }
-  });
-
-  $('#crm').on('click', '.delete-button', function(e) {
-    e.preventDefault();
-    var customer = $(e.target).parent();
-    var customerId = customer.data('customer-id');
+  var deleteCustomer = function(customer, customerId) {
     $.ajax({
       url: "/customers/"+customerId,
       type: 'DELETE',
@@ -27,13 +24,9 @@ $(document).ready(function() {
         view.deleteCustomerFailure();
       }
     });
-  });
+  };
 
-  $('#crm').on('click', '.more-button', function(e) {
-    e.preventDefault();
-    var customer = $(e.target).parent();
-    var customerId = customer.data('customer-id');
-    var customerNotes = customer.find('.notes-go-here');
+  var seeCustomerNotes = function(customerId, customerNotes) {
     $.ajax({
       url: "/customers/"+customerId+"/notes",
       type: 'GET',
@@ -44,6 +37,37 @@ $(document).ready(function() {
         view.customerNotesFailure();
       }
     });
+  };
+
+  var addNewCustomerNote = function (e, customerId, customerNote) {
+    $.ajax({
+      url: "/customers/"+customerId+"/notes",
+      type: 'POST',
+      data: $(e.target).serialize(),
+      success: function(data) {
+        view.addCustomerNote(data,customerNote);
+      },
+      failure: function() {
+        view.addCustomerNoteFailure();
+      }
+    });
+  };
+
+  var view = new CrmView('#crm');
+  getAllCustomers();
+  $('#crm').on('click', '.delete-button', function(e) {
+    e.preventDefault();
+    var customer = $(e.target).parent();
+    var customerId = customer.data('customer-id');
+    deleteCustomer(customer, customerId);
+  });
+
+  $('#crm').on('click', '.more-button', function(e) {
+    e.preventDefault();
+    var customer = $(e.target).parent();
+    var customerId = customer.data('customer-id');
+    var customerNotes = customer.find('.notes-go-here');
+    seeCustomerNotes(customerId, customerNotes);
   });
 
   $('#crm').on('click', '.add-notes', function(e) {
@@ -58,17 +82,7 @@ $(document).ready(function() {
     var customer = $(e.target).parent();
     var customerId = customer.data('customer-id');
     var customerNote = customer.find('.notes-go-here');
-    $.ajax({
-      url: "/customers/"+customerId+"/notes",
-      type: 'POST',
-      data: $(e.target).serialize(),
-      success: function(data) {
-        view.addCustomerNote(data,customerNote);
-      },
-      failure: function() {
-        view.addCustomerNoteFailure();
-      }
-    });
+    addNewCustomerNote(e, customerId, customerNote);
   });
 
 });
