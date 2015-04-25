@@ -1,8 +1,13 @@
 function CrmView (rootSelector) {
   this.crm = $(rootSelector);
+
+  this.registerEventHandlers();
 }
 
 CrmView.prototype = {
+  registerEventHandlers: function() {
+
+  },
   allCustomers: function(data) {
     for(var i = 0; i < data.length; i++) {
       var customer = data[i]
