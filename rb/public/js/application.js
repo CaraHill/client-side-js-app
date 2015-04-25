@@ -1,20 +1,15 @@
 $(document).ready(function() {
 
+  var view = new CrmView('#crm');
+
   $.ajax({
     url: "/customers",
     type: 'GET',
     success: function(data) {
-      for(var i = 0; i < data.length; i++) {
-        var customer = data[i]
-        var customerId = customer.id
-        var customerDiv = '<div class="customer" data-customer-id="'+customerId+'">'+customer.name+
-         '<a class="delete-button" href="">Delete</a> '+
-        '<a class="more-button" href="">More Info</a> '+'<a class="add-notes" href="">Add New Note</a>'+'<form class="new-note" method="post" action="/customers/"'+customerId+'"/notes"><input type="text" name="note[content]" placeholder="note content"><input type="submit" value="submit new note"></form>'+'<div class="notes-go-here"></div>'+'</div>';
-        $('#crm').append(customerDiv);
-      }
+      view.allCustomers(data);
     },
     failure: function() {
-      alert("Where are the customers?!?");
+      view.allCustomersFailure();
     }
   });
 
@@ -26,10 +21,10 @@ $(document).ready(function() {
       url: "/customers/"+customerId,
       type: 'DELETE',
       success: function() {
-        customer.hide();
+        view.deleteCustomer(customer);
       },
       failure: function() {
-        alert("That customer was not deleted!");
+        view.deleteCustomerFailure();
       }
     });
   });
@@ -43,10 +38,10 @@ $(document).ready(function() {
       url: "/customers/"+customerId+"/notes",
       type: 'GET',
       success: function(data) {
-        customerNotes.html(data);
+        view.customerNotes(data,customerNotes);
       },
       failure: function() {
-        alert("That customer's notes were not displayed!")
+        view.customerNotesFailure();
       }
     });
   });
@@ -62,17 +57,16 @@ $(document).ready(function() {
     e.preventDefault();
     var customer = $(e.target).parent();
     var customerId = customer.data('customer-id');
-    var customerNotes = customer.find('.notes-go-here');
+    var customerNote = customer.find('.notes-go-here');
     $.ajax({
       url: "/customers/"+customerId+"/notes",
       type: 'POST',
       data: $(e.target).serialize(),
       success: function(data) {
-        customerNotes.html(data);
-        alert("Success! Your note was added.");
+        view.addCustomerNote(data,customerNote);
       },
       failure: function() {
-        alert("The note was not added.")
+        view.addCustomerNoteFailure();
       }
     });
   });
