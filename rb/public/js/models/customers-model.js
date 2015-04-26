@@ -1,6 +1,4 @@
-function CustomersModel () {
-
-}
+function CustomersModel () {}
 
 CustomersModel.prototype = {
   getAllCustomers: function(success,failure) {

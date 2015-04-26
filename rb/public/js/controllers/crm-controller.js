@@ -2,22 +2,24 @@ function CrmController () {}
 
 CrmController.prototype = {
   run: function() {
-    this.view = new CrmView('#crm');
+    this.customersView = new CustomersView('#crm');
     this.customersModel = new CustomersModel();
     this.customerModel = new CustomerModel();
+    this.customerView = new CustomerView('#crm');
     this.notesModel = new NotesModel();
+    this.notesView = new NotesView('#crm');
 
-    this.customersModel.getAllCustomers(this.view.allCustomers,this.view.allCustomersFailure);
+    this.customersModel.getAllCustomers(this.customersView.allCustomers,this.customersView.allCustomersFailure);
 
     this.registerEventHandlers();
   },
   registerEventHandlers: function() {
-    this.view.registerDeleteEventHandler(this.customerModel.deleteCustomer);
+    this.customerView.registerDeleteEventHandler(this.customerModel.deleteCustomer);
 
-    this.view.registerNotesEventHandler(this.notesModel.seeCustomerNotes);
+    this.notesView.registerNotesEventHandler(this.notesModel.seeCustomerNotes);
 
-    this.view.registerAddNotesFormEventHandler();
+    this.notesView.registerAddNotesFormEventHandler();
 
-    this.view.registerNewNoteEventHandler(this.notesModel.addNewCustomerNote);
+    this.notesView.registerNewNoteEventHandler(this.notesModel.addNewCustomerNote);
   }
 }

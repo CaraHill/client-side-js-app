@@ -13,6 +13,6 @@ CustomerModel.prototype = {
         failure();
       }
     });
-  },
+  }
 }
 
