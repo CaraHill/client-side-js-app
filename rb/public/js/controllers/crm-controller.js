@@ -2,8 +2,8 @@ function CrmController () {}
 
 CrmController.prototype = {
   run: function() {
-    this.customersView = new CustomersView('#crm');
     this.customersModel = new CustomersModel();
+    this.customersView = new CustomersView('#crm');
     this.customerModel = new CustomerModel();
     this.customerView = new CustomerView('#crm');
     this.notesModel = new NotesModel();

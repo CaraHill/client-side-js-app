@@ -1,4 +1,4 @@
-function CustomerView (rootSelector) {
+function CustomerView(rootSelector) {
   this.crm = $(rootSelector);
 }
 
